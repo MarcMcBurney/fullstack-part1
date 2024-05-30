@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createLogger } from 'vite'
 
 const Heading = ({text}) => (<h2>{text}</h2>)
 
@@ -31,10 +32,8 @@ const App = () => {
     setVote(newVotes)
     
   }
-
   const maxValue = Math.max(...votes)
   const indexOfMaxValue = votes.indexOf(maxValue)
-  console.log(maxValue,indexOfMaxValue, votes,  anecdotes)
   
     return (
     <div>
